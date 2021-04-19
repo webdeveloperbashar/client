@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+.footerWrapped {
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, #03228f 0%, #1d62f0 100%);
+}
+.footer {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  border-top: 1px solid rgba(128, 128, 128, 0.514);
+}
+.footer a {
+  color: orange;
+  transition: all 0.2s ease-in-out;
+}
+.footer a:hover {
+  transition: all 0.2s ease-in-out;
+}

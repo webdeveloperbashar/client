@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+.loginForm {
+  width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  position: relative;
+}
+.form {
+  border: 1px solid rgba(133, 132, 132, 0.623);
+  padding: 20px;
+}
+input {
+  border-bottom: 1px solid gray;
+}
+.btn {
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, #03228f 0%, #1d62f0 100%);
+  margin: 10px 0;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  background-image: linear-gradient(90deg, #0d6ada 0%, #0d6ada 100%);
+}
+.checkbox {
+  float: left !important;
+  color: rgb(92, 91, 91) !important;
+  font-size: 15px;
+}
+.forgetPass {
+  float: right !important;
+  color: rgb(92, 91, 91) !important;
+  font-size: 15px;
+}
+.hr::before {
+  content: "";
+  position: absolute;
+  right: 60px;
+  width: 30%;
+  height: 1px;
+  background: gray;
+}
+.hr::after {
+  content: "";
+  position: absolute;
+  left: 60px;
+  width: 30%;
+  height: 1px;
+  background: gray;
+}
+.google {
+  border: 1px solid rgba(133, 132, 132, 0.623);
+  padding: 5px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  color: gray !important;
+  position: relative;
+  width: 100%;
+  background: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+}
+.google:hover {
+  background: none;
+}
+.google span svg {
+  font-size: 28px;
+  float: left;
+}
+
+/***********Responsive***********/
+@media screen and (max-width: 768px) {
+  .loginForm {
+    width: 100%;
+  }
+  .checkbox {
+    font-size: 14px;
+  }
+  .forgetPass {
+    font-size: 14px;
+  }
+  .hr::before {
+    right: 50px;
+  }
+  .hr::after {
+    left: 50px;
+  }
+}

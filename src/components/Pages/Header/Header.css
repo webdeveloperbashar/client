@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+a {
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none !important;
+}
+span.navbar-brand img {
+  width: 160px;
+}
+span.navbar-brand.nav-link {
+  text-decoration: none !important;
+}
+.navbar {
+  transition: all 0.3s ease;
+  background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+}
+a.nav-link a {
+  color: white;
+  font-weight: 500;
+  padding: 5px 0;
+  margin-right: 20px;
+  font-size: 15px;
+}
+a.nav-link a:hover {
+  border-bottom: 2px solid #c1c0c0;
+  color: #c1c0c0;
+}

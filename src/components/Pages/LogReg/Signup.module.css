@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+.formWrapper {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  position: relative;
+}
+.form {
+  border: 1px solid rgba(133, 132, 132, 0.623);
+  padding: 20px;
+}
+input {
+  margin: 15px 0;
+}
+.btn {
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, #03228f 0%, #1d62f0 100%);
+  margin: 10px 0;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+}
+.btn:hover {
+  background-image: linear-gradient(90deg, #0d6ada 0%, #0d6ada 100%);
+}
+.hr::before {
+  content: "";
+  position: absolute;
+  right: 60px;
+  width: 30%;
+  height: 1px;
+  background: gray;
+}
+.hr::after {
+  content: "";
+  position: absolute;
+  left: 60px;
+  width: 30%;
+  height: 1px;
+  background: gray;
+}
+.google {
+  border: 1px solid rgba(133, 132, 132, 0.623);
+  padding: 5px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+  color: gray !important;
+  position: relative;
+  width: 100%;
+  background: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+}
+.google:hover {
+  background: none;
+}
+.google span svg {
+  font-size: 28px;
+  float: left;
+}
+/***********Responsive***********/
+@media screen and (max-width: 768px) {
+  .formWrapper {
+    width: 100%;
+  }
+  .hr::before {
+    right: 50px;
+  }
+  .hr::after {
+    left: 50px;
+  }
+}
