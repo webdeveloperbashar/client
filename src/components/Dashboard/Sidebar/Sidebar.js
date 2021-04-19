@@ -12,13 +12,12 @@ import React, { useContext, useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Context } from "../../App";
-import logo from "../../image/logo-light.png";
 import "./Sidebar.css";
 function Sidebar() {
   const [loggedIn, setLoggedIn] = useContext(Context);
   const [dbData, setDbData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/item/admin`)
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/admin`)
       .then((res) => res.json())
       .then((data) => setDbData(data));
   }, []);
@@ -30,7 +29,7 @@ function Sidebar() {
           <Container>
             <strong>
               <img
-                src={logo}
+                src="https://i.ibb.co/6RnfxPV/logo-light.png"
                 className="img-fluid"
                 alt="logo"
                 width={{ width: "160px" }}

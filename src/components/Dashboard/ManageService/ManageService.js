@@ -7,16 +7,16 @@ import "./ManageService.css";
 function ManageService() {
   const [dbData, setDbData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/item`)
+    fetch(`https://whispering-garden-49450.herokuapp.com/item`)
       .then((res) => res.json())
       .then((data) => setDbData(data));
   }, []);
   const handleEdit = (id) => {};
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/item/${id}`, {
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/${id}`, {
       method: "DELETE",
     }).then(() => {
-      fetch(`http://localhost:5000/item`)
+      fetch(`https://whispering-garden-49450.herokuapp.com/item`)
         .then((res) => res.json())
         .then((data) => setDbData(data));
     });
@@ -42,11 +42,6 @@ function ManageService() {
                   <th>Price</th>
                   <th>Action</th>
                 </tr>
-                {/* <div className="d-flex justify-content-center w-100">
-                  <span>
-                    {dbData.length === 0 && <img src={spinner} alt="" />}
-                  </span>
-                </div> */}
                 {dbData.map((data) => (
                   <tr>
                     <td>{data.title}</td>

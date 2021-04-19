@@ -5,7 +5,7 @@ import "./Review.css";
 function Review() {
   const [dbData, setDbData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/item/review`)
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/review`)
       .then((res) => res.json())
       .then((data) => setDbData(data));
   }, []);
@@ -29,14 +29,14 @@ function Review() {
   const handleSubmit = (e) => {
     e.preventDefault();
     clearForm();
-    fetch(`http://localhost:5000/item/review`, {
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/review`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
       body: JSON.stringify(values),
     }).then(() => {
-      fetch(`http://localhost:5000/item/review`)
+      fetch(`https://whispering-garden-49450.herokuapp.com/item/review`)
         .then((res) => res.json())
         .then((data) => setDbData(data));
     }).catch(err=>{

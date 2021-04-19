@@ -13,7 +13,7 @@ function MakeAdmin() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:5000/item/admin`, {
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/admin`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

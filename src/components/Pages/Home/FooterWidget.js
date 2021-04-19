@@ -3,13 +3,12 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { AiOutlineMail, AiTwotonePhone } from "react-icons/ai";
 import {
-    FaFacebook,
-    FaGoogle,
-    FaInstagram,
-    FaLocationArrow
+  FaFacebook,
+  FaGoogle,
+  FaInstagram,
+  FaLocationArrow
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../../image/logo-light.png";
 const FooterWidget = () => {
   return (
     <div className="FooterWrapped">
@@ -18,7 +17,7 @@ const FooterWidget = () => {
           <Col md={3}>
             <div className="widget">
               <img
-                src={logo}
+                src="https://i.ibb.co/6RnfxPV/logo-light.png"
                 className="img-fluid"
                 alt="logo"
                 style={{ width: "160px" }}

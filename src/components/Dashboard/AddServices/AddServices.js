@@ -38,7 +38,7 @@ function AddServices() {
     formClear();
     const fieldData = { ...values };
     fieldData.imageUrl = image;
-    fetch(`http://localhost:5000/item`, {
+    fetch(`https://whispering-garden-49450.herokuapp.com/item`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -7,7 +7,7 @@ import TextTruncate from "react-text-truncate";
 const Services = () => {
   const [dbData, setDbData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/item`)
+    fetch(`https://whispering-garden-49450.herokuapp.com/item`)
       .then((res) => res.json())
       .then((data) => setDbData(data));
   }, []);

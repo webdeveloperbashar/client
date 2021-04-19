@@ -5,7 +5,7 @@ import "./OrderList.css";
 function OrderList() {
   const [dbData, setDbData] = useState([]);
   useEffect(()=>{
-    fetch(`http://localhost:5000/item/book`)
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/book`)
       .then((res) => res.json())
       .then((data) => setDbData(data))
   },[])

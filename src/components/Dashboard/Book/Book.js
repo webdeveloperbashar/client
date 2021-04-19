@@ -38,7 +38,7 @@ function Book() {
     data.imageUrl = findEl?.imageUrl;
     data.description = findEl?.description;
     console.log(data);
-    fetch(`http://localhost:5000/item/book`, {
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/book`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

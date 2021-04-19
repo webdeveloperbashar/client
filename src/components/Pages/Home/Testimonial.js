@@ -50,7 +50,7 @@ const Testimonial = () => {
   };
   const [dbData, setDbData] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/item/review`)
+    fetch(`https://whispering-garden-49450.herokuapp.com/item/review`)
       .then((res) => res.json())
       .then((data) => setDbData(data));
   }, []);
